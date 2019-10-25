@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_project",
+  "version": "1.0.0",
+  "description": "Responsive portfolio websit",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaollie74/portfolio-website.git"
+  },
+  "author": "Kyle Olson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaollie74/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/kaollie74/portfolio-website#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
