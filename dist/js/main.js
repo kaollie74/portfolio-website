@@ -5,6 +5,7 @@ $(document).ready(onReady);
 
 const navItems = document.querySelectorAll('.nav-item');
 
+
 function onReady() {
   console.log('JQ')
   $('.menu-btn').on('click', toggleMenu)
