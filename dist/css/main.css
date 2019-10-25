@@ -8,6 +8,8 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/background.jpg); }
 
 h1, h2, h3 {
   margin: 0;
@@ -29,7 +31,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #429bb8; }
 
 main {
   padding: 4rem;
@@ -38,3 +40,10 @@ main {
     margin-top: 1rem; }
     main .icons a {
       padding: .4rem; }
+      main .icons a:hover {
+        color: #429bb8;
+        transition: all 0.5s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
