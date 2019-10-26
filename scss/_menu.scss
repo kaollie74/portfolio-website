@@ -3,7 +3,11 @@ $secondary-color: #429bb8;
 $background-opacity: 0.8;
 
 @mixin easeOut {
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-out;
+}
+
+@mixin easeIn {
+  transition: all 0.5s ease-in-out ;
 }
 // Menu Button
 .menu-btn { 
@@ -76,7 +80,7 @@ $background-opacity: 0.8;
     background: darken(rgba($primary-color, $background-opacity),5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    @include easeOut;
+    @include easeIn();
 
     &.show {
       // Slide in from Top
@@ -84,19 +88,21 @@ $background-opacity: 0.8;
     } // end '&.show'
   } // end '&-nav'
 
-  // Branding side of page
+  // Branding side of page(Left-side)
   &-branding { // .menu-branding
     margin: 0;
     padding: 0;
     background: rgba($primary-color, $background-opacity);
+    //translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
+
     
 
     &.show {
       // Slide in from Bottom
       transform: translate3d(0, 0, 0);
-      @include easeOut;
+      
     } // end '&.show'
 
     .portrait {
@@ -107,7 +113,7 @@ $background-opacity: 0.8;
       border-radius: 50%;
       border: solid 30px $secondary-color;
     } // end .portrait
-  }
+  } // end &-branding
 
   .nav-item {
     transform: translate3d(600, 0, 0);

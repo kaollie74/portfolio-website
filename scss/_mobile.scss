@@ -1,0 +1,26 @@
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+
+// Widscreens
+@include mediaXl {
+
+}
+// Desktops & Laptops
+@include mediaLg {
+
+}
+// Tablets & Small Laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+}
+// Smartphones
+@include mediaSm {
+
+}
