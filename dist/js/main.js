@@ -23,14 +23,16 @@ function toggleMenu() {
     $('.menu').addClass('show');
     $('.menu-nav').addClass('show');
     $('.menu-branding').addClass('show')
-    navItems.forEach(item => item.addClass('show'));
+    $('.nav-item').closest('li').addClass('show');
+    //navItems.forEach(item => item.closet.parent('li').addClass('show'));
     showMenu = true;
   } else if (showMenu) {
     $('.menu-btn').removeClass('close');
     $('.menu').removeClass('show');
     $('.menu-nav').removeClass('show');
     $('.menu-branding').removeClass('show');
-    navItems.forEach(item => item.removeClass('show'));
+    $('.nav-item').closest('li').removeClass('show');
+    //navItems.forEach(item => item.removeClass('show'));
     // set Menu State
     showMenu = false;
   }
