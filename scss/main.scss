@@ -112,6 +112,11 @@ main {
     'bioimage bio bio'
     'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
+
+    span{
+      color: yellow;
+      font-size: 1.1rem;
+    }
   }
   
   .bio-image {
