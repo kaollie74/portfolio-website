@@ -9,9 +9,22 @@
 }
 // Desktops & Laptops
 @include mediaLg {
+
+  #about .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  } // END .about-info
+
   .projects {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
 }
 // Tablets & Small Laptops
 @include mediaMd {
@@ -54,7 +67,7 @@
     } // END .portrait
   } // END .menu-branding
 
-  .about-info {
+  #about .about-info {
     grid-template-areas:
       "bioimage"
       "bio"
@@ -72,10 +85,12 @@
 
 // SMARTPHONES
 @include mediaSm {
+
   main#home h1 {
     margin-top: 10vh;
   }
   .projects {
     grid-template-columns: 1fr;
   }
+ 
 } // end mediaSm
