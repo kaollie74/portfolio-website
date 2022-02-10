@@ -18,6 +18,6 @@
   "homepage": "https://github.com/kaollie74/portfolio-website#readme",
   "dependencies": {
     "jquery": "^3.4.1",
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   }
 }
